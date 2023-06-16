@@ -1,0 +1,119 @@
+/* section 1 */
+/* style.css */
+
+/* section 2 */
+h3 {
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    color: #26273B;
+}
+
+/* section 3 */
+.select-list {
+    max-width: 991px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 0 0.25rem;
+}
+
+.select-button {
+    margin: 1rem 0;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    color: #C4A87E;
+    background-color: #26273B;
+    transition: all 0.5s ease;
+}
+
+.select-button:hover {
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+    .select {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .select {
+        max-width: 250px;
+    }
+}
+
+/* section 4 */
+.item {
+    margin: 1rem;
+}
+
+.item-pic {
+    border-radius: 10px;
+    overflow:hidden;
+}
+
+.item-pic img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all 1s ease-out;
+}
+
+.item-pic img:hover {
+    transform: scale(1.05);
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem auto 0.25rem;
+    color: #26273B;
+}
+
+.ori-price {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0.75rem;
+    color: #CCCCCC;
+    text-decoration:line-through;
+}
+
+.price {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #26273B;
+}
+
+.item-btn {
+    width: fit-content;
+    display: block;
+    margin: 1rem auto;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10px;
+    color: #C4A87E;
+    background-color: #26273B;
+    transition: all .5s ease;
+}
+
+.item-btn:hover {
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 575px) {
+    .title {
+        font-size: 16px;
+    }
+    
+    .ori-price {
+        font-size: 14px;
+    }
+    
+    .price {
+        font-size: 14px;
+    }
+}

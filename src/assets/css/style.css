@@ -1,0 +1,119 @@
+/* ========================================   通用   ======================================== */
+body {
+    font-family: 'David Libre', serif, '微軟正黑體';
+}
+
+a {
+    /* color: #000000; */
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    /* FULL HD */
+    max-width: 1920px;
+    /* 2K */
+    /* max-width: 2560px; */
+    /* 4K */
+    /* max-width: 3840px; */
+    /* background-color: #26273B; */
+    margin: 80px auto 5rem;
+    /* border: 1px blue solid; */
+    
+}
+
+main section {
+    margin: auto;
+    margin-bottom: 7.5rem;
+    padding: 0 1rem;
+    /* border: 1px red solid; */
+}
+
+/* ========================================   網頁卷軸   ======================================== */
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+  
+/* 網頁捲軸【背景】 */
+::-webkit-scrollbar-track {
+    background-color: #26273B;
+}
+  
+/* 網頁捲軸【把手】 */
+::-webkit-scrollbar-thumb {
+    background-color: #C4A87E;
+    border-radius: 50px;
+}
+  
+/* 網頁捲軸【滑過時】 */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #FFFFFF;
+}
+
+/* ========================================   Banner   ======================================== */
+.banner {
+    width: 100%;
+    height: 47.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/banner.webp");
+    background-position:50%;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.banner-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.banner-content h2 {
+    line-height: 2;
+    font-size: 48px;
+    font-weight: 900;
+    color: #26273B;
+}
+
+@media screen and (max-width: 991px) {
+    .banner {
+        height: 40rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .banner-content h2 {
+        font-weight: 900;
+        text-align: center;
+    }
+}
+
+.banner-content h2 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #26273B;
+}
+
+@media screen and (max-width: 575px) {
+    .banner-content h2 {
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .banner-content {
+        left: 0;
+    }    
+}
+
+

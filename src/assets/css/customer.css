@@ -1,0 +1,84 @@
+h3 {
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    color: #26273B;
+}
+
+/* ========================================   最新消息   ======================================== */
+.news {
+    margin-bottom: 2.5rem;
+}
+
+.news-detail {
+    padding: 1rem;
+    border: 3px #26273B solid;
+}
+
+.news-detail img {
+    border: 3px #26273B solid;
+    border-radius: 10px;
+}
+
+.news-body {
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    border-radius: 10px;
+    background-color: #26273B;
+}
+
+.news-title {
+    line-height: 2;
+    font-size: 22px;
+    font-weight: 700;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    color: #C4A87E;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all .5s ease;
+}
+
+.news-text {
+    line-height: 1.75;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    margin-top: 1rem;
+    color: #C4A87E;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all .5s ease;
+}
+
+.news:hover .news-title {
+    color: #FFFFFF;
+}
+
+.news:hover .news-text {
+    color: #FFFFFF;
+}
+
+/* ========================================   隱私權保護聲明   ======================================== */
+/* ========================================   退換貨聲明   ======================================== */
+/* ========================================   運送服務方式   ======================================== */
+.customer {
+    padding: 0.5rem 1.5rem;
+}
+
+.customer h4 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 2.5rem;
+    color: #26273B;
+}
+
+.customer p {
+    line-height: 1.75;
+    font-size: 18px;
+    font-weight: 700;
+    color: #26273B;
+}
+

@@ -1,0 +1,458 @@
+h3 {
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    color: #26273B;
+}
+
+.list {
+    text-align: center;
+}
+
+/* .list button {
+    font-weight: 700;
+    margin: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border: 2px #26273B solid;
+    border-radius: 10px;
+    color: #26273B;
+    background-color: #FFFFFF;
+    transition: all 0.5s ease;
+} */
+
+/* .list button:nth-child(1) {
+    width: 230px;
+    color: #FFFFFF;
+    background-color: #26273B;
+} */
+
+/* .list button:hover {
+    color: #C4A87E;
+    background-color: #26273B;
+} */
+
+.login-btn,
+.register-btn,
+.forget-btn {
+    font-weight: 700;
+    margin: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border: 2px #26273B solid;
+    border-radius: 10px;
+    color: #26273B;
+    background-color: #FFFFFF;
+    transition: all 0.5s ease;
+}
+
+.login-btn {
+    width: 230px;
+}
+
+.login-btn:hover,
+.register-btn:hover,
+.forget-btn:hover {
+    color: #C4A87E;
+    background-color: #26273B;
+}
+
+/* ========================================   登入會員   ======================================== */
+.login-form {
+    max-width: 1200px;
+    margin: auto;
+    opacity: 1;
+}
+
+.login-title {
+    font-size: 28px;
+    font-weight: 900;
+    text-align: center;
+    color: #26273B;
+}
+
+.login-block {
+    display: flex;
+    margin: 2.5rem auto 0;
+}
+
+.login-content {
+    width: 40%;
+    margin: 0 auto;
+}
+.login-detail {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+.login-detail label {
+    font-weight: 900;
+    align-self: center;
+    margin-right: 0.25rem;
+    color: #26273B;
+}
+
+.login-detail input {
+    margin-left: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    border: 3px #26273B solid;
+    border-radius: 10px;
+}
+
+.login-textarea {
+    width: 60%;
+    display: flex;
+}
+
+.login-textarea label {
+    font-weight: 900;
+    margin-right: 0.25rem;
+    padding: 0.5rem 0;
+}
+.login-textarea textarea {
+    width: 100%;
+    font-weight: 900;
+    margin-left: 0.25rem;
+    padding: 0.5rem 1rem;
+    border: 3px #26273B solid;
+    border-radius: 10px;
+    color: #26273B;
+}
+
+.login-error {
+    font-size: 22px;
+    font-weight: 900;
+    color: red;
+}
+
+.login-error p {
+    text-align: center;
+}
+
+.login-send {
+    margin: 1.5rem 0.25rem;
+    text-align: center;
+}
+
+.login-send button {
+    font-weight: 700;
+    padding: 0.75rem 1.25rem;
+    border: 2px #26273B solid;
+    border-radius: 10px;
+    color: #26273B;
+    background-color: #FFFFFF;
+    transition: all 0.5s ease;
+}
+
+.login-send button:hover {
+    color: #C4A87E;
+    background-color: #26273B;
+}
+
+@media screen and (max-width: 768px) {
+    .login-block {
+        display: block;
+    }
+
+    .login-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .login-textarea {
+        width: 80%;
+        display: block;
+        margin: 2rem auto 0;
+    }
+
+    .login-textarea label {
+        margin-right: 0;
+    }
+
+    .login-textarea textarea {
+        margin-top: 0.5rem;
+        margin-left: 0;
+    }
+
+    .login-send {
+        width: 80%;
+        margin: 2.5rem auto;
+    }
+}
+
+/* ========================================   註冊會員   ======================================== */
+.register-form {
+    max-width: 1200px;
+    display: none;
+    margin: auto;
+    opacity: 0;
+}
+
+.register-title {
+    font-size: 28px;
+    font-weight: 900;
+    text-align: center;
+    color: #26273B;
+}
+
+.register-block {
+    display: flex;
+    margin: 2.5rem auto 0;
+}
+
+.register-content {
+    width: 40%;
+    margin: 0 auto;
+}
+.register-detail {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+.register-detail:nth-child(2) {
+    margin: 2rem auto;
+}
+
+.register-detail label {
+    font-weight: 900;
+    align-self: center;
+    margin-right: 0.25rem;
+    color: #26273B;
+}
+
+.register-detail input {
+    margin-left: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    border: 3px #26273B solid;
+    border-radius: 10px;
+}
+
+.register-textarea {
+    width: 60%;
+    display: flex;
+}
+
+.register-textarea label {
+    font-weight: 900;
+    margin-right: 0.25rem;
+    padding: 0.5rem 0;
+}
+.register-textarea textarea {
+    width: 100%;
+    font-weight: 900;
+    margin-left: 0.25rem;
+    padding: 0.5rem 1rem;
+    border: 3px #26273B solid;
+    border-radius: 10px;
+    color: #26273B;
+}
+
+.register-send {
+    margin: 1.5rem 0.25rem;
+    text-align: center;
+}
+
+.register-send button {
+    font-weight: 700;
+    padding: 0.75rem 1.25rem;
+    border: 2px #26273B solid;
+    border-radius: 10px;
+    color: #26273B;
+    background-color: #FFFFFF;
+    transition: all 0.5s ease;
+}
+
+.register-send button:hover {
+    color: #C4A87E;
+    background-color: #26273B;
+}
+
+@media screen and (max-width: 768px) {
+    .register-block {
+        display: block;
+    }
+
+    .register-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .register-textarea {
+        width: 80%;
+        display: block;
+        margin: 2rem auto 0;
+    }
+
+    .register-textarea label {
+        margin-right: 0;
+    }
+
+    .register-textarea textarea {
+        margin-top: 0.5rem;
+        margin-left: 0;
+    }
+
+    .register-send {
+        width: 80%;
+        margin: 2.5rem auto;
+    }
+}
+
+/* ========================================   忘記密碼   ======================================== */
+.forget-password-form {
+    max-width: 1200px;
+    display: none;
+    margin: auto;
+    opacity: 0;
+}
+
+.forget-password-title {
+    font-size: 28px;
+    font-weight: 900;
+    text-align: center;
+    color: #26273B;
+}
+
+.forget-password-block {
+    display: flex;
+    margin: 2.5rem auto 0;
+}
+
+.forget-password-content {
+    width: 40%;
+    margin: 0 auto;
+}
+.forget-password-detail {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+.forget-password-detail label {
+    font-weight: 900;
+    align-self: center;
+    margin-right: 0.25rem;
+    color: #26273B;
+}
+
+.forget-password-detail input {
+    margin-left: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    border: 3px #26273B solid;
+    border-radius: 10px;
+}
+
+.forget-password-textarea {
+    width: 60%;
+    display: flex;
+}
+
+.forget-password-textarea label {
+    font-weight: 900;
+    margin-right: 0.25rem;
+    padding: 0.5rem 0;
+}
+.forget-password-textarea textarea {
+    width: 100%;
+    font-weight: 900;
+    margin-left: 0.25rem;
+    padding: 0.5rem 1rem;
+    border: 3px #26273B solid;
+    border-radius: 10px;
+    color: #26273B;
+}
+
+.forget-password-send {
+    margin: 1.5rem 0.25rem;
+    text-align: center;
+}
+
+.forget-password-send button {
+    font-weight: 700;
+    padding: 0.75rem 1.25rem;
+    border: 2px #26273B solid;
+    border-radius: 10px;
+    color: #26273B;
+    background-color: #FFFFFF;
+    transition: all 0.5s ease;
+}
+
+.forget-password-send button:hover {
+    color: #C4A87E;
+    background-color: #26273B;
+}
+
+@media screen and (max-width: 768px) {
+    .forget-password-block {
+        display: block;
+    }
+
+    .forget-password-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .forget-password-textarea {
+        width: 80%;
+        display: block;
+        margin: 2rem auto 0;
+    }
+
+    .forget-password-textarea label {
+        margin-right: 0;
+    }
+
+    .forget-password-textarea textarea {
+        margin-top: 0.5rem;
+        margin-left: 0;
+    }
+
+    .forget-password-send {
+        width: 80%;
+        margin: 2.5rem auto;
+    }
+}
+
+
+
+/* ========================================   配合 click 事件   ======================================== */
+.login-btn-color,
+.register-btn-color,
+.forget-btn-color {
+    color: #26273B;
+    background-color: #FFFFFF;
+}
+
+.login-btn-click,
+.register-btn-click,
+.forget-btn-click {
+    color: #FFFFFF;
+    background-color: #26273B;
+}
+
+
+
+.login-display,
+.register-display,
+.forget-password-display {
+    display: none;
+}
+
+.login-click,
+.register-click,
+.forget-password-click {
+    display: block;
+    opacity: 1;
+    animation: popup 2.5s;
+}
+
+@keyframes popup {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+

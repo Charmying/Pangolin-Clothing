@@ -1,0 +1,256 @@
+h3 {
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    color: #26273B;
+}
+
+/* ========================================   品牌故事   ======================================== */
+.about-us {
+    line-height: 2;
+    font-size: 20px;
+    font-weight: 700;
+    color: #26273B;
+}
+
+.about-us > div {
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+
+/* ========================================   實體通路   ======================================== */
+.location {
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+}
+
+.location:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.location-img {
+    width: 50%;
+    padding: 1rem;
+    
+}
+
+.location-img img {
+    width: 100%;
+    border-radius: 10px;
+    overflow:hidden;
+}
+
+.location-img img {
+    width: 100%;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: all 0.5s linear;
+}
+
+.location-img img:hover {
+    transform: scale(1.025);
+}
+
+.location-content {
+    width: 50%;
+    align-self: center;
+    padding: 1rem 4rem;
+}
+
+.location-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #26273B;
+}
+
+.location-text {
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 700;
+    color: #26273B;
+}
+
+@media screen and (max-width: 991px) {
+    .location-content {
+        padding: 1rem 2.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .location {
+        display: block;
+    }
+
+    .location-img {
+        width: 100%;
+    }
+
+    .location-content {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .location-img {
+        padding: 1rem 0;
+    }
+
+    .location-content {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .location-title {
+        font-size: 24px;
+    }
+    
+    .location-text {
+        font-size: 18px;
+    }
+}
+
+/* ========================================   人才招募   ======================================== */
+.recruit {
+    max-width: 1200px !important;
+    margin: auto;
+}
+
+.recruit-block {
+    margin: 1.25rem 0;
+}
+
+.recruit-block-detail {
+    height: 350px;
+    line-height: 1.5;
+    padding: 1rem;
+    color: #C4A87E;
+    background-color: #26273B;
+    overflow-y: scroll;
+}
+
+.recruit-title {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.recruit-text {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* ========================================   聯絡我們   ======================================== */
+.contact-form {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contact-form-block {
+    display: flex;
+    margin: 2.5rem auto 0;
+}
+
+.contact-form-content {
+    width: 40%;
+    margin: 0 auto;
+}
+.contact-form-content-detail {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form-content-detail:nth-child(2) {
+    margin: 2rem auto;
+}
+
+.contact-form-content-detail label {
+    font-weight: 900;
+    align-self: center;
+    margin-right: 0.25rem;
+    color: #26273B;
+}
+
+.contact-form-content-detail input {
+    margin-left: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    border: 3px #26273B solid;
+    border-radius: 10px;
+}
+
+.contact-form-textarea {
+    width: 60%;
+    display: flex;
+}
+
+.contact-form-textarea label {
+    font-weight: 900;
+    margin-right: 0.25rem;
+    padding: 0.5rem 0;
+}
+
+.contact-form-textarea textarea {
+    width: 100%;
+    font-weight: 900;
+    margin-left: 0.25rem;
+    padding: 0.5rem 1rem;
+    border: 3px #26273B solid;
+    border-radius: 10px;
+    color: #26273B;
+}
+
+.contact-form-send {
+    margin: 2.5rem 0.25rem;
+    text-align: end;  
+}
+
+.contact-form-send button {
+    font-weight: 700;
+    padding: 0.75rem 1.25rem;
+    border: 2px #26273B solid;
+    border-radius: 10px;
+    color: #26273B;
+    background-color: #FFFFFF;
+    transition: all 0.5s ease;
+}
+
+.contact-form-send button:hover {
+    color: #C4A87E;
+    background-color: #26273B;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form-block {
+        display: block;
+    }
+
+    .contact-form-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-form-textarea {
+        width: 80%;
+        display: block;
+        margin: 2rem auto 0;
+    }
+
+    .contact-form-textarea label {
+        margin-right: 0;
+    }
+
+    .contact-form-textarea textarea {
+        margin-top: 0.5rem;
+        margin-left: 0;
+    }
+
+    .contact-form-send {
+        width: 80%;
+        margin: 2.5rem auto;
+    }
+}
