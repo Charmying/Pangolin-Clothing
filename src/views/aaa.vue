@@ -1,6 +1,3 @@
-// 已經使用 npm install axios
-// 已經使用 npm install axios vue-axios --save
-
 <template>
     <div>
       <form @submit.prevent="login">
@@ -20,7 +17,6 @@
   </template>
   
   <script>
-  // import axios from 'axios';
   
   export default {
     data() {
