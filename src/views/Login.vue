@@ -38,9 +38,6 @@
         </section>
         <!-- section 4 -->
         <section>
-
-
-
             <form class="login-form" action="#" method="post" @submit.prevent="login">
                 <h3 class="login-title" data-aos="fade-up" data-aos-duration="1000">登入會員</h3>
                 <div class="login-block">
@@ -56,10 +53,12 @@
                         <div class="login-error">
                             <p>{{ loginError }}</p>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="login-send">
-                    <button type="submit" @click="memLogin" data-aos="flip-up" data-aos-duration="1000">SEND</button>
+                    <!-- <button type="submit" @click="memLogin" data-aos="flip-up" data-aos-duration="1000">SEND</button> -->
+                    <button type="submit" data-aos="flip-up" data-aos-duration="1000">SEND</button>
                 </div>
             </form>
 
@@ -125,6 +124,7 @@
     import BackToTop from "@/components/BackToTop.vue";
     import { ref, onMounted } from 'vue'
     import { useRouter } from 'vue-router';
+    import { BASE_URL } from "@/assets/js/common.js";
     export default {
         components: {
             Header,
@@ -181,6 +181,7 @@
             const router = useRouter();
             const loginError = ref("");
             const showText = () => {
+                loginError.value = "";
                 const originalText = "帳號或密碼錯誤";
                 let index = 0;
                 const intervalId = setInterval(() => {
@@ -191,22 +192,45 @@
                     }
                 }, 100) // 控制每個字出現的時間間隔，單位為毫秒
             }
-            const memLogin = () => {
-                if (loginEmail.value === "qqq@qqq.qqq" && loginPassword.value === "qqq") {
-                    alert("登入成功");
-                    router.push("/");
-                } else {
-                    showText();
-                }
+
+            const login = async () => {
+
+                const loginData = new FormData();
+                loginData.append('loginEmail', loginEmail.value);
+                loginData.append('loginPassword', loginPassword.value);
+                            
+                // fetch('http://localhost/pangolin-clothing/src/assets/api/api.php', {
+                // const ttt = await fetch('http://localhost/pangolin-clothing/src/assets/api/api.php', {
+                const ttt = await fetch(`${BASE_URL}/api.php`, {
+                    method: 'POST',
+                    body: loginData
+                })
+                    .then(response => {
+                        return response.text();
+                    
+                    })
+                    .catch(error => {
+                        console.log(error);
+                    });
+              
+                    console.log(ttt);
+                    if (ttt == "密碼正確") {
+                        // 成功
+                        console.log("登入成功");
+                        alert("登入成功")
+                        router.push("/");
+                    } else {
+                        // 失敗，顯示錯誤訊息
+                        // this.errorMessage = response.message;
+                        console.log("帳密錯誤");
+                        showText();
+                    }
+
             };
-
-
-
 
             onMounted(() => {
                 AOS.init();
             })
-
 
             // ========================================   return   ======================================== //
             return {
@@ -223,7 +247,8 @@
                 // =====  功能   ===== //
                 loginEmail,
                 loginPassword,
-                memLogin,
+                // memLogin,
+                login,
                 loginError,
                 showText,
             };

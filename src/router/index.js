@@ -102,16 +102,6 @@ const routes = [
         component: () => import('../views/commodity-accessories.vue')
     },
 
-
-
-
-    // 測試用 //
-    {
-        path: '/aaa',
-        name: 'aaa',
-        component: () => import('../views/aaa.vue')
-    },
-
 ]
 
 
